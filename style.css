@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+li,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  /* display: flex; */
+  background: rgb(238, 232, 232);
+  /* position: fixed; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 25px 7%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top__title {
+  font-size: 20px;
+  order: 1;
+  font-weight: 500;
+  color: #000;
+  margin-right: 20px;
+}
+.search-box {
+  border-radius: 15px;
+  order: 3;
+  position: relative;
+
+  /* height: 50px; */
+}
+.search-box__input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  background: rgb(8, 1, 1);
+}
+
+.search-box__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* width: 20px;
+  height: 20px; */
+  border: none;
+  outline: nonde;
+  border-radius: 15px;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+  order: 2;
+  margin-right: auto;
+  padding-left: 40px;
+}
+.nav {
+  /* overflow: hidden; */
+  padding: 15px;
+  background-color: rgb(10, 4, 4);
+  width: 100%;
+}
+.nav ul {
+  /* order: 1; */
+  /* background-color: red; */
+  width: 100%;
+}
+
+.nav.fixed {
+  position: fixed;
+  box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+}
+.nav.fixed ul li img {
+  height: 36px;
+}
+.nav.fixed ul li a {
+  font-size: 14px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+/* button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0;
+} */
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.5);
+}
+
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap");
+
+#main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #24252a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  color: rgb(184, 4, 4);
+  font-size: 14px;
+}
+
+.login-card {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.login-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  inset: 0;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.login-card-logo {
+  margin-bottom: 2rem;
+}
+
+.login-card-logo img {
+  width: 60px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+  text-align: center;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #35339a;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+.login-card-header {
+  margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.login-card-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+}
+
+.login-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+  position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+  position: absolute;
+  top: 0.82rem;
+  left: 1.4rem;
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+
+.login-card-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.login-card-form .form-item-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(1rem * 0.6);
+  margin-bottom: 0.5rem;
+}
+
+.login-card-footer {
+  margin-top: 1.5rem;
+  font-size: calc(1rem * 0.8);
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 1.5rem;
+  padding-left: calc(1rem * 3.5);
+  border-radius: 100px;
+  width: 100%;
+  transition: background 0.5s;
+}
+
+.login-card input:focus {
+  background: white;
+}
+
+.login-card input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: darkblue;
+}
+
+.login-card-form button {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.5s;
+}
+
+.login-card-form button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.login-card-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.login-card-social > div {
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: calc(1rem * 0.8);
+}
+
+.login-card-social-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.login-card-social-btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.login-card-social-btns a:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 0;
+  }
+
+  .login-card {
+    width: 300px;
+    padding: 2rem;
+  }
+}
+
+.username {
+  color: rgb(25, 231, 221);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  height: 100vh;
+  background: #fff;
+}
+.container__img {
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  margin-right: 10px;
+}
+
+.btn-submit {
+  background-color: rgb(53, 31, 68);
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 150px 50px;
+}
+#footer {
+  background-color: #000;
+}
